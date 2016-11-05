@@ -1,0 +1,11 @@
+<% @video_files.each do |video_file| %>
+  <h3><%= video_file.file.file.filename %></h3>
+  Size: <%= number_to_human_size(video_file.file.size, precision: 2) %><br />
+  Duration: <%= Time.at(video_file.duration).utc.strftime("%H:%M:%S") %><br />
+
+  <%= video_tag video_file.encode_file_url, :size => "320x240", type: "video/mp4", :controls => true, poster: video_file.file_url(:thumb), class: "video-js", data_setup: "{}" %>
+  <%= link_to 'Edit watermark', edit_video_file_path(video_file) %>
+<% end %>
+<br />
+
+<%= link_to 'Upload new video file', new_video_file_path %>

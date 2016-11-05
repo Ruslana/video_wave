@@ -1,0 +1,5 @@
+<%= form_for @video_file, url: {action: "create"} do |form| %>
+  <%= form.file_field :file %>
+  <%= form.text_field :watermark %>
+  <%= form.submit "Create" %>
+<% end %>

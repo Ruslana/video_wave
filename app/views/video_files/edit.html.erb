@@ -1,0 +1,5 @@
+<%= form_for @resource, url: {action: "update"} do |form| %>
+  <%= video_tag @resource.encode_file_url, :size => "320x240", type: "video/mp4", :controls => true, poster: @resource.file_url(:thumb), class: "video-js", data_setup: "{}" %>
+  <%= form.text_field :watermark %>
+  <%= form.submit "Update" %>
+<% end %>
