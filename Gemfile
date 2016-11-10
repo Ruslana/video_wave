@@ -7,10 +7,6 @@ gem 'mysql2'
 gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
 gem 'carrierwave-video'
 gem 'carrierwave-video-thumbnailer'
-gem 'carrierwave-ffmpeg'
-gem 'streamio-ffmpeg'
-gem 'mini_magick'
-gem 'rmagick'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'

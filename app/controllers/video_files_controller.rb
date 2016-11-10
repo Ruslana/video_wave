@@ -10,7 +10,7 @@ class VideoFilesController < ApplicationController
   end
 
   def update
-    @resource.update_attributes(permitted_params)
+    @resource.assign_attributes(permitted_params)
     if @resource.save!
       redirect_to video_files_path
     else
