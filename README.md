@@ -8,6 +8,10 @@ Uploads video file, creates a preview, encodes to mp4 with a watermark and plays
 - FFmpeg 3.2
 - MySQL
 
+## Installation font DejaVuSans
+* brew tap caskroom/fonts
+* brew cask install DejaVuSans.ttf
+
 ## Installation
 * git clone git@github.com:Ruslana/video_wave.git
 * cd video_wave
